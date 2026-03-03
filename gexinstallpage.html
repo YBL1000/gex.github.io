@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gex Browser</title>
+
+    <style>
+        :root {
+            --blue: #3A8DFF;
+            --blue-dark: #1F5FBF;
+            --gray-dark: #0F1115;
+            --gray-mid: #1A1D22;
+            --text-light: #E6E6E6;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: var(--gray-dark);
+            color: var(--text-light);
+        }
+
+        header {
+            text-align: center;
+            padding: 120px 20px;
+            background: linear-gradient(135deg, var(--gray-dark), var(--gray-mid));
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            color: var(--blue);
+            font-weight: 700;
+        }
+
+        p.subtitle {
+            font-size: 1.3rem;
+            opacity: 0.85;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 35px;
+            padding: 15px 35px;
+            background: var(--blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background: var(--blue-dark);
+        }
+
+        .features {
+            padding: 80px 20px;
+            background: var(--gray-mid);
+            text-align: center;
+        }
+
+        .feature {
+            max-width: 700px;
+            margin: 40px auto;
+        }
+
+        .feature h2 {
+            color: var(--blue);
+            font-size: 1.8rem;
+        }
+
+        .feature p {
+            opacity: 0.85;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            padding: 25px;
+            text-align: center;
+            background: #0B0C0F;
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+
+        /* Logo styling */
+        .logo {
+            width: 90px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <!-- Your Gex Logo -->
+    <svg class="logo" width="51" height="56" viewBox="0 0 51 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4.9502 39.5C4.9502 41.0167 5.24869 42.5186 5.8291 43.9199C6.40954 45.3212 7.26049 46.5945 8.33301 47.667C9.40552 48.7395 10.6788 49.5905 12.0801 50.1709C13.4814 50.7513 14.9833 51.0498 16.5 51.0498C18.0167 51.0498 19.5186 50.7513 20.9199 50.1709C22.3212 49.5905 23.5945 48.7395 24.667 47.667C25.7395 46.5945 26.5905 45.3212 27.1709 43.9199C27.7513 42.5186 28.0498 41.0167 28.0498 39.5H33C33 41.6668 32.5733 43.8126 31.7441 45.8145C30.9149 47.8163 29.6991 49.6349 28.167 51.167C26.6349 52.6991 24.8163 53.9149 22.8145 54.7441C20.8126 55.5733 18.6668 56 16.5 56C14.3332 56 12.1874 55.5733 10.1855 54.7441C8.18372 53.9149 6.36515 52.6991 4.83301 51.167C3.30087 49.6349 2.08506 47.8163 1.25586 45.8145C0.426657 43.8126 0 41.6668 0 39.5H4.9502ZM16.5 0C21.4388 0 25.8697 2.17092 28.8936 5.60938L36.7637 12.4502L46.9824 2.23242L50.5176 5.76758L40.5459 15.7383L50.9307 24.7656L47.6514 28.5381L37.002 19.2812L28.8906 27.3936C28.424 27.9239 27.9239 28.424 27.3936 28.8906L27.0176 29.2676L26.9873 29.2373C24.1362 31.5875 20.4834 33 16.5 33C7.3873 33 0 25.6127 0 16.5C0 7.3873 7.3873 0 16.5 0ZM16.5 5C10.1487 5 5 10.1487 5 16.5C5 22.8513 10.1487 28 16.5 28C22.8513 28 28 22.8513 28 16.5C28 13.6993 26.9979 11.1333 25.334 9.13867L22.5693 6.73535L22.5703 6.7334C20.8082 5.63589 18.7287 5 16.5 5ZM32.9834 15.7871C32.9895 15.9302 32.9937 16.0737 32.9961 16.2178L33.2197 15.9932L32.9834 15.7871Z" fill="#3A8DFF"/>
+    </svg>
+
+    <h1>Gex Browser</h1>
+    <p class="subtitle">Fast. Private. Modern. A modern browser built for everything the others don't.</p>
+
+    <!-- Download button pointing to gex.exe -->
+    <a class="btn" href="gex.exe" download>Download Gex</a>
+</header>
+
+<section class="features">
+    <div class="feature">
+        <h2>⚡ Blazing Fast</h2>
+        <p>Optimized for speed and low memory usage.</p>
+    </div>
+
+    <div class="feature">
+        <h2>🛡️ Privacy First</h2>
+        <p>No tracking, no hidden data collection — just a clean, transparent browsing experience.</p>
+    </div>
+
+    <div class="feature">
+        <h2>🎨 Sleek UI</h2>
+        <p>A sleek UI will make you want to use a good browser.</p>
+    </div>
+    <div class="feature">
+        <h2>💵 Free</h2>
+        <p>A free browser means you never pay a cent.</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 gex - All Rights Reserved
+</footer>
+
+</body>
+</html>
